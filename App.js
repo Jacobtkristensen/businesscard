@@ -5,9 +5,10 @@ export default function App() {
   return (
     <View style={styles.container}>
       <div style={styles.div1}>
-      <Text></Text>
-      <Image style={styles.img} source = {{uri:"https://i.ebayimg.com/images/g/iDcAAOSwo9VbDbfn/s-l500.jpg"}}/>
+      <Text style={styles.text1}>Dorthe Poulsen</Text>
+      <Image style={styles.tesla} source = './images/tesla-removebg-preview.png' resizeMode='contain'/>
       <Image style={styles.img2} source = './images/bperson.png'/>
+      <Image style={styles.QR} source = './images/QR.png'/>
 
       </div>
       
@@ -22,24 +23,39 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor : 'black',
   },
-   img: {
-    width: 150,
-    height: 100,
+  text1: {
+    color: 'black',
+    fontSize: 15,
     position: 'absolute',
-    bottom: -30,
-    right: -10,
+    top: 0,
+    left: 20,
+  },
+   tesla: {
+    width: 75,
+    height: 75,
+    position: 'absolute',
+    right: 0,
+    bottom: -20,
     },
   img2: {
    width: 150,
-    height: 100,
+    height: 150,
     position: 'absolute',
-    top: 10,
-    left: -10,
+    bottom: 0,
+    left: -30,
     },
+  QR: {
+    width: 50,
+    height: 50,
+    position: 'absolute',
+    right: 0,
+  },
   div1: {
     width: 300,
     height: 150,
     backgroundColor: '#fff',
+    position: 'relative',
   },
 });
